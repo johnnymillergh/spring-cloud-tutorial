@@ -25,6 +25,7 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-client-greeting-service</module>
+        <module>eureka-client-feign-service</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -140,6 +141,17 @@
 
     <!-- Global Dependencies Management -->
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
