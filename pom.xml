@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- POM Reference https://maven.apache.org/pom.html -->
+
+    <!-- Project Basics -->
+    <groupId>com.jm</groupId>
+    <artifactId>springcloudtutorial</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Spring Cloud Tutorial</name>
+    <description>A project of Spring Cloud Tutorial</description>
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+    </properties>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.7.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <modules>
+        <module>eureka-server</module>
+        <module>eureka-client-greeting-service</module>
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.jm</groupId>
+                <artifactId>eurekaserver</artifactId>
+                <!-- Sub module version is inherited from root (parent). -->
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jm</groupId>
+                <artifactId>eurekaclientgreetingservice</artifactId>
+                <!-- Sub module version is inherited from root (parent). -->
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- More Project Information -->
+    <url>https://github.com/johnnymillergh/spring-cloud-tutorial</url>
+    <inceptionYear>2019</inceptionYear>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <organization>
+        <name>JM Software, Inc.</name>
+        <url>https://github.com/johnnymillergh</url>
+    </organization>
+    <developers>
+        <developer>
+            <name>Johnny Miller (锺俊)</name>
+            <email>johnnysviva@outlook.com</email>
+            <url>https://www.linkedin.com/in/ijohnnymiller</url>
+            <organization>JM Software, Inc.</organization>
+            <organizationUrl>https://github.com/johnnymillergh</organizationUrl>
+            <timezone>8</timezone>
+        </developer>
+    </developers>
+
+    <!-- VCS Settings -->
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/johnnymillergh/spring-cloud-tutorial/issues</url>
+    </issueManagement>
+
+    <!-- Build Settings -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- The Versions Plugin updates the versions of components in the POM. -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <excludes>
+                        <exclude>org.apache.commons:commons-collections4</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Environment Settings -->
+    <profiles>
+        <profile>
+            <id>development</id>
+            <properties>
+                <env>development</env>
+                <envAlias>dev</envAlias>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <env>test</env>
+                <envAlias>test</envAlias>
+            </properties>
+        </profile>
+        <profile>
+            <id>stage</id>
+            <properties>
+                <env>stage</env>
+                <envAlias>stage</envAlias>
+            </properties>
+        </profile>
+        <profile>
+            <id>production</id>
+            <properties>
+                <env>production</env>
+                <envAlias>prod</envAlias>
+            </properties>
+        </profile>
+    </profiles>
+
+    <!-- Global Dependencies Management -->
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
