@@ -5,6 +5,7 @@
 
     <!-- Sub-module Basics -->
     <artifactId>eurekaclientgreetingservice</artifactId>
+    <packaging>jar</packaging>
     <name>Eureka Client Greeting Service</name>
     <description>Eureka Client Greeting Service</description>
     <properties>

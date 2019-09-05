@@ -5,6 +5,7 @@
 
     <!-- Sub-module Basics -->
     <artifactId>eurekaserver</artifactId>
+    <packaging>jar</packaging>
     <name>Eureka Server</name>
     <description>A Spring Cloud component - Eureka Server</description>
     <properties>

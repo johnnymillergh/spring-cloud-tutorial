@@ -9,6 +9,7 @@
     <groupId>com.jm</groupId>
     <artifactId>springcloudtutorial</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>Spring Cloud Tutorial</name>
     <description>A project of Spring Cloud Tutorial</description>
     <properties>
