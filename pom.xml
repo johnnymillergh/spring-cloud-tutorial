@@ -8,7 +8,7 @@
     <!-- Project Basics -->
     <groupId>com.jm</groupId>
     <artifactId>springcloudtutorial</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Spring Cloud Tutorial</name>
     <description>A project of Spring Cloud Tutorial</description>
@@ -43,6 +43,7 @@
                 <!-- Sub module version is inherited from root (parent). -->
                 <version>${project.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>com.jm</groupId>
                 <artifactId>eurekaclientgreetingservice</artifactId>
