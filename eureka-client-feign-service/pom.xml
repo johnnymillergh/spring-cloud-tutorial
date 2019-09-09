@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Sub-module Basics -->
-    <artifactId>eurekaclientfeignservice</artifactId>
+    <artifactId>eureka-client-feign-service</artifactId>
     <packaging>jar</packaging>
     <name>Eureka Client Greeting Service</name>
     <description>Eureka Client Greeting Service</description>
