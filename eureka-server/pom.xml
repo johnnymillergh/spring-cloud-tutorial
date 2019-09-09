@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Sub-module Basics -->
-    <artifactId>eurekaserver</artifactId>
+    <artifactId>eureka-server</artifactId>
     <packaging>jar</packaging>
     <name>Eureka Server</name>
     <description>A Spring Cloud component - Eureka Server</description>
@@ -14,7 +14,7 @@
     <parent>
         <groupId>com.jm</groupId>
         <artifactId>springcloudtutorial</artifactId>
-        <version>0.0.4</version>
+        <version>0.0.5</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 

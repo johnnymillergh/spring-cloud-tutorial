@@ -8,7 +8,7 @@
     <!-- Project Basics -->
     <groupId>com.jm</groupId>
     <artifactId>springcloudtutorial</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
     <packaging>pom</packaging>
     <name>Spring Cloud Tutorial</name>
     <description>A project of Spring Cloud Tutorial</description>
@@ -163,6 +163,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
         <dependency>
