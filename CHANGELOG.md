@@ -1,3 +1,12 @@
+# [v0.0.5](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.4...v0.0.5) (2019-09-09)
+
+
+### Features
+
+* **$Feign:** add Circuit breaker and Hystrix dashboard supports ([c50d2e8](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/c50d2e8))
+
+
+
 # [v0.0.4](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.3...v0.0.4) (2019-09-06)
 
 

@@ -14,7 +14,7 @@
     <parent>
         <groupId>com.jm</groupId>
         <artifactId>springcloudtutorial</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
