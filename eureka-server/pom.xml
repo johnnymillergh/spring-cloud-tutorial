@@ -13,8 +13,8 @@
     </properties>
     <parent>
         <groupId>com.jm</groupId>
-        <artifactId>springcloudtutorial</artifactId>
-        <version>0.0.5</version>
+        <artifactId>spring-cloud-tutorial</artifactId>
+        <version>0.0.6-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
