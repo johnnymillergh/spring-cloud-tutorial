@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Sub-module Basics -->
-    <artifactId>eureka-server</artifactId>
+    <artifactId>zuul-service</artifactId>
     <packaging>jar</packaging>
-    <name>Eureka Server</name>
-    <description>A Spring Cloud component - Eureka Server</description>
+    <name>Zuul Service</name>
+    <description>Router and Filter: Zuul Service</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -32,7 +32,12 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
     </dependencies>
 </project>
