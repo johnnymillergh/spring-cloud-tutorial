@@ -71,6 +71,11 @@ public class EurekaClientGreetingServiceApplication {
         return "Hi, " + name + ", I'm from port: " + port + " " + helloClient.hello(param);
     }
 
+    @RequestMapping("/say-hello")
+    public String sayHello(@RequestParam Map param) {
+        return "Hello, " + param.get("name") + "!";
+    }
+
     @FeignClient(name = "eureka-client-feign-service", fallback = HelloClientFallback.class)
     @Qualifier(value = "helloClient")
     interface HelloClient {

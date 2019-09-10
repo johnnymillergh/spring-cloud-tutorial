@@ -7,7 +7,7 @@
     <!-- Sub-module Basics -->
     <artifactId>eureka-client-feign-service</artifactId>
     <packaging>jar</packaging>
-    <name>Eureka Client Greeting Service</name>
+    <name>Eureka Client Feign Service</name>
     <description>Eureka Client Greeting Service</description>
     <properties>
         <java.version>1.8</java.version>
@@ -15,7 +15,7 @@
     <parent>
         <groupId>com.jm</groupId>
         <artifactId>spring-cloud-tutorial</artifactId>
-        <version>0.0.6</version>
+        <version>0.0.7</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 

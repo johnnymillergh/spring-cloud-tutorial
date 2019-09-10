@@ -34,6 +34,6 @@ public class EurekaClientFeignServiceApplication {
 
     @RequestMapping("/say-hello")
     public String sayHello(@RequestParam Map param) {
-        return "Hello world! " + param.get("name");
+        return "Hello, " + param.get("name") + "!";
     }
 }

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: zuul-service
+
+server:
+  port: 8764
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    greeting-api:
+      path: /greeting-api/**
+      serviceId: eureka-client-greeting-service
+    feign-api:
+      path: /feign-api/**
+      serviceId: eureka-client-feign-service
