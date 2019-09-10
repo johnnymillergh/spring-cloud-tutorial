@@ -1,3 +1,12 @@
+# [v0.0.6](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.5...v0.0.6) (2019-09-10)
+
+
+### Bug Fixes
+
+* **$Feign:** add bean's qualifier to avoid compile warning ([35d9f7f](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/35d9f7f))
+
+
+
 # [v0.0.5](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.4...v0.0.5) (2019-09-09)
 
 
