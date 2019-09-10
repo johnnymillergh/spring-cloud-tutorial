@@ -27,6 +27,7 @@
         <module>eureka-server</module>
         <module>eureka-client-greeting-service</module>
         <module>eureka-client-feign-service</module>
+        <module>zuul-service</module>
     </modules>
     <dependencyManagement>
         <dependencies>
