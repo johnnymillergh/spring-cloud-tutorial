@@ -2,6 +2,7 @@ package com.jm.eurekaclientgreetingservice;
 
 import feign.Headers;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -50,7 +51,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 public class EurekaClientGreetingServiceApplication {
     private final HelloClient helloClient;
 
-    public EurekaClientGreetingServiceApplication(HelloClient helloClient) {
+    public EurekaClientGreetingServiceApplication(@Qualifier("helloClient") HelloClient helloClient) {
         this.helloClient = helloClient;
     }
 
@@ -71,6 +72,7 @@ public class EurekaClientGreetingServiceApplication {
     }
 
     @FeignClient(name = "eureka-client-feign-service", fallback = HelloClientFallback.class)
+    @Qualifier(value = "helloClient")
     interface HelloClient {
         /**
          * Hello
