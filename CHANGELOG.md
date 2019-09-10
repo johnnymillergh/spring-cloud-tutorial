@@ -1,3 +1,18 @@
+# [v0.0.7](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.6...v0.0.7) (2019-09-10)
+
+
+### Bug Fixes
+
+* **$POM:** correct the name of sub module `Eureka Client Feign Service` ([8dea402](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/8dea402))
+
+
+### Features
+
+* **$Zuul:** add a Zuul request pre filter ([af05a2d](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/af05a2d))
+* **$Zuul:** add Zuul support; proxy or route requests ([ab9ba5c](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/ab9ba5c))
+
+
+
 # [v0.0.6](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.5...v0.0.6) (2019-09-10)
 
 
