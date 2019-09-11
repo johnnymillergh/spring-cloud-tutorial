@@ -1,3 +1,13 @@
+# [v0.0.8](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.7...v0.0.8) (2019-09-11)
+
+
+### Features
+
+* **$Config:** support Git based Centralized Configuration - `Spring Cloud Config` ([b39e8c4](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/b39e8c4))
+* **$POM:** support multi environment profiles ([2fcfd29](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/2fcfd29))
+
+
+
 # [v0.0.7](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.6...v0.0.7) (2019-09-10)
 
 
