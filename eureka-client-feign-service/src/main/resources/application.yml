@@ -1,6 +1,8 @@
 spring:
   application:
     name: eureka-client-feign-service
+  profiles:
+    active: @env@
 
 server:
   port: 8763
