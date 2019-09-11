@@ -93,6 +93,9 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <!-- Set the name of packaged .jar file -->
+        <finalName>${project.artifactId}-${envAlias}-${project.version}</finalName>
     </build>
 
     <!-- Environment Settings -->
