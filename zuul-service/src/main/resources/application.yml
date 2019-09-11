@@ -1,6 +1,8 @@
 spring:
   application:
     name: zuul-service
+  profiles:
+    active: @env@
 
 server:
   port: 8764

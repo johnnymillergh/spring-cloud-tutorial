@@ -8,7 +8,7 @@
     <!-- Project Basics -->
     <groupId>com.jm</groupId>
     <artifactId>spring-cloud-tutorial</artifactId>
-    <version>0.0.7</version>
+    <version>0.0.8</version>
     <packaging>pom</packaging>
     <name>Spring Cloud Tutorial</name>
     <description>A project of Spring Cloud Tutorial</description>
@@ -28,6 +28,8 @@
         <module>eureka-client-greeting-service</module>
         <module>eureka-client-feign-service</module>
         <module>zuul-service</module>
+        <module>config-server</module>
+        <module>config-client</module>
     </modules>
     <dependencyManagement>
         <dependencies>

@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Sub-module Basics -->
-    <artifactId>eureka-server</artifactId>
+    <artifactId>config-server</artifactId>
     <packaging>jar</packaging>
-    <name>Eureka Server</name>
-    <description>A Spring Cloud component - Eureka Server</description>
+    <name>Config Server</name>
+    <description>Centralized Configuration: Config Server</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -32,7 +32,12 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
 </project>
