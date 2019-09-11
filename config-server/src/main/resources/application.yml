@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/johnnymillergh/spring-cloud-configuration
+          search-paths: configuration
+          username: puclic_repo_doesnt_need_username_and_password
+          password: puclic_repo_doesnt_need_username_and_password
+      label: master
+  profiles:
+    active: @env@
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
