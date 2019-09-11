@@ -1,3 +1,13 @@
+# [v0.0.9](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.8...v0.0.9) (2019-09-11)
+
+
+### Features
+
+* **$GitHub:** add new issue templates ([8ff0c10](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/8ff0c10))
+* **$README:** add new information badges; complete `Features` part ([438d90c](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/438d90c))
+
+
+
 # [v0.0.8](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.7...v0.0.8) (2019-09-11)
 
 
