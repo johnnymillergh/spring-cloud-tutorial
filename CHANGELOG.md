@@ -1,3 +1,13 @@
+# [v0.1.0](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.9...v0.1.0) (2019-09-11)
+
+
+### Performance Improvements
+
+* **$POM:** add build configuration - setting the name of packaged .jar file ([6549317](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/6549317))
+* **$POM:** remove dependency management of sub modules ([200c3ce](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/200c3ce))
+
+
+
 # [v0.0.9](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.8...v0.0.9) (2019-09-11)
 
 
