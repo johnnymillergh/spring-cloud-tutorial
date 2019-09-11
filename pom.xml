@@ -40,20 +40,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-            <dependency>
-                <groupId>com.jm</groupId>
-                <artifactId>eurekaserver</artifactId>
-                <!-- Sub module version is inherited from root (parent). -->
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.jm</groupId>
-                <artifactId>eurekaclientgreetingservice</artifactId>
-                <!-- Sub module version is inherited from root (parent). -->
-                <version>${project.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
