@@ -1,11 +1,16 @@
 spring:
   application:
-    name: eureka-client-feign-service
+    name: config-client
+  cloud:
+    config:
+      label: master
+      uri: http://localhost:8888/
+      profile: @env@
   profiles:
     active: @env@
 
 server:
-  port: 8763
+  port: 8766
 
 eureka:
   client:

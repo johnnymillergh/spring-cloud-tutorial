@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Sub-module Basics -->
-    <artifactId>zuul-service</artifactId>
+    <artifactId>config-client</artifactId>
     <packaging>jar</packaging>
-    <name>Zuul Service</name>
-    <description>Router and Filter: Zuul Service</description>
+    <name>Config Client</name>
+    <description>Centralized Configuration: Config Client</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -28,16 +28,15 @@
         </plugins>
     </build>
 
-    <!-- Scoped Dependencies Management -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
 </project>
