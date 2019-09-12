@@ -1,3 +1,12 @@
+# [v0.1.1](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.0...v0.1.1) (2019-09-12)
+
+
+### Features
+
+* **$SpringCloudConfig:** improve hign availability of Spring Cloud Config; support service discovery ([b546aee](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/b546aee))
+
+
+
 # [v0.1.0](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.0.9...v0.1.0) (2019-09-11)
 
 
