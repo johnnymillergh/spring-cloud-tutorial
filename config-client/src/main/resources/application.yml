@@ -4,8 +4,10 @@ spring:
   cloud:
     config:
       label: master
-      uri: http://localhost:8888/
       profile: @env@
+      discovery:
+        enabled: true
+        service-id: config-server
   profiles:
     active: @env@
 
