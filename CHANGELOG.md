@@ -1,3 +1,12 @@
+# [v0.1.2](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.1...v0.1.2) (2019-09-12)
+
+
+### Bug Fixes
+
+* **$POM:** correct version number ([911a107](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/911a107))
+
+
+
 # [v0.1.1](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.0...v0.1.1) (2019-09-12)
 
 
