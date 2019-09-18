@@ -1,3 +1,13 @@
+# [v0.1.3](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.2...v0.1.3) (2019-09-18)
+
+
+### Features
+
+* **$Docker:** add Docker support; now we can deploy micro services on Docker ([7804694](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/7804694))
+* **$Eureka:** add document for module `eureka-server` ([b343c5d](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/b343c5d))
+
+
+
 # [v0.1.2](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.1...v0.1.2) (2019-09-12)
 
 
