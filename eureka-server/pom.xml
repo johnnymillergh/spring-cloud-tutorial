@@ -14,7 +14,7 @@
     <parent>
         <groupId>com.jm</groupId>
         <artifactId>spring-cloud-tutorial</artifactId>
-        <version>0.1.2</version>
+        <version>0.1.3-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
@@ -24,6 +24,33 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- https://github.com/spotify/dockerfile-maven/tree/master/docs -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.12</version>
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>build</goal>
+                            <!-- <goal>push</goal> -->
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <contextDirectory>${project.basedir}</contextDirectory>
+                    <buildDirectory>${project.basedir}/target</buildDirectory>
+                    <dockerfile>${project.basedir}/Dockerfile</dockerfile>
+                    <repository>ijohnnymiller/${project.artifactId}-${envAlias}</repository>
+                    <tag>${project.version}</tag>
+                    <buildArgs>
+                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
+                </configuration>
             </plugin>
         </plugins>
     </build>
