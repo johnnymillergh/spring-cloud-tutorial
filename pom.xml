@@ -118,6 +118,8 @@
         </plugins>
 
         <!-- Set the name of packaged .jar file -->
+        <!-- The name of packaged .jar file will be like: -->
+        <!-- eureka-server-dev-0.1.0-SNAPSHOT.jar -->
         <finalName>${project.artifactId}-${envAlias}-${project.version}</finalName>
     </build>
 
