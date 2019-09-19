@@ -8,7 +8,7 @@
     <!-- Project Basics -->
     <groupId>com.jm</groupId>
     <artifactId>spring-cloud-tutorial</artifactId>
-    <version>0.1.3</version>
+    <version>0.1.4-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Spring Cloud Tutorial</name>
     <description>A project of Spring Cloud Tutorial</description>
@@ -92,9 +92,34 @@
                     </excludes>
                 </configuration>
             </plugin>
+
+            <!-- Require Maven Version -->
+            <!-- https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.0.0-M2</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>3.0</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
 
         <!-- Set the name of packaged .jar file -->
+        <!-- The name of packaged .jar file will be like: -->
+        <!-- eureka-server-dev-0.1.0-SNAPSHOT.jar -->
         <finalName>${project.artifactId}-${envAlias}-${project.version}</finalName>
     </build>
 
