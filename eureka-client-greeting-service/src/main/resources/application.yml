@@ -21,3 +21,10 @@ management:
     web:
       exposure:
         include: hystrix.stream, info, health
+
+logging:
+  config: classpath:configuration/logback/logback-@env@.xml
+  # Configure logging level of project as DEBUG to enable SQL logging and other logging.
+  level:
+    com:
+      jm: DEBUG
