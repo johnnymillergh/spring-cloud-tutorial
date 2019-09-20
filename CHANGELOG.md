@@ -1,3 +1,17 @@
+# [v0.1.4](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.3...v0.1.4) (2019-09-20)
+
+
+### Bug Fixes
+
+* **$POM:** add Maven plugin to fix the error of `mvn versions:display-plugin-updates` ([170772d](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/170772d))
+
+
+### Features
+
+* **$LOGBack:** support outputting log to file ([489aad7](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/489aad7))
+
+
+
 # [v0.1.3](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.2...v0.1.3) (2019-09-18)
 
 
