@@ -1,3 +1,13 @@
+# [v0.1.5](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.4...v0.1.5) (2019-09-23)
+
+
+### Performance Improvements
+
+* **$POM:** update HuTool version to 4.6.7 ([6f1fa55](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/6f1fa55))
+* **$POM:** update Spring Cloud version to Greenwich.SR3 ([7c37a88](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/7c37a88))
+
+
+
 # [v0.1.4](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.3...v0.1.4) (2019-09-20)
 
 
