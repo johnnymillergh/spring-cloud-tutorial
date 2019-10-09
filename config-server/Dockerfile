@@ -3,7 +3,7 @@ FROM java:8-jre
 VOLUME /tmp
 ARG JAR_FILE
 RUN echo ${JAR_FILE}
-ADD ${JAR_FILE} app.jar
+COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java", "-Xmx200m", "-jar", "app.jar"]
 # Debugging the application in a Docker container
 # ENTRYPOINT ["java", "-Xmx200m", "-Xdebug", "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=XXXX", "-jar", "app.jar"]
