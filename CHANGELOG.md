@@ -1,3 +1,12 @@
+# [v0.1.6](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.5...v0.1.6) (2019-10-09)
+
+
+### Performance Improvements
+
+* **$POM:** upgrade Spring Boot version to 2.1.9.RELEASE ([b133b0d](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/b133b0d))
+
+
+
 # [v0.1.5](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.4...v0.1.5) (2019-09-23)
 
 
