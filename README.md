@@ -1,5 +1,6 @@
 ![Spring Cloud Tutorial Feature Graphics](https://raw.githubusercontent.com/johnnymillergh/MaterialLibrary/master/spring-cloud-tutorial/spring-cloud-tutorial-social-image.png)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/97ac31b5b5334b5ca7b200cfe68dcd3c)](https://www.codacy.com/manual/johnnymillergh/spring-cloud-tutorial?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=johnnymillergh/spring-cloud-tutorial&amp;utm_campaign=Badge_Grade)
 [![GitHub release](https://img.shields.io/github/release/johnnymillergh/spring-cloud-tutorial.svg)](https://github.com/johnnymillergh/spring-cloud-tutorial/releases)
 [![Build Status](https://travis-ci.com/johnnymillergh/spring-cloud-tutorial.svg?branch=master)](https://travis-ci.com/johnnymillergh/spring-cloud-tutorial)
 [![GitHub issues](https://img.shields.io/github/issues/johnnymillergh/spring-cloud-tutorial)](https://github.com/johnnymillergh/spring-cloud-tutorial/issues)
@@ -60,7 +61,7 @@ This project exists thanks to all the people who contribute.
 
 ### Sponsors
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](Become a sponsor)]
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://become-a-sponsor.org)]
 
 ## License
 
