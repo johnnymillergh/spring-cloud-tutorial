@@ -139,16 +139,26 @@
 
     <!-- Environment Settings -->
     <profiles>
+        <!-- `development-local` is default profile to start services -->
         <profile>
-            <id>development</id>
+            <id>development-local</id>
             <properties>
-                <env>development</env>
-                <envAlias>dev</envAlias>
+                <env>development-local</env>
+                <envAlias>dev_loc</envAlias>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
+
+        <profile>
+            <id>development-docker</id>
+            <properties>
+                <env>development-docker</env>
+                <envAlias>dev_dkr</envAlias>
+            </properties>
+        </profile>
+
         <profile>
             <id>test</id>
             <properties>
@@ -156,6 +166,7 @@
                 <envAlias>test</envAlias>
             </properties>
         </profile>
+
         <profile>
             <id>stage</id>
             <properties>
@@ -163,6 +174,7 @@
                 <envAlias>stage</envAlias>
             </properties>
         </profile>
+
         <profile>
             <id>production</id>
             <properties>

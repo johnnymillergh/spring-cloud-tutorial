@@ -1,37 +1,37 @@
 version: "3.7"
 services:
   eureka-server:
-    image: "ijohnnymiller/eureka-server-dev:${TAG}"
+    image: "ijohnnymiller/eureka-server-dev_dkr:${TAG}"
     container_name: eureka-server
     ports:
       - 8761:8761
 
   config-server:
-    image: "ijohnnymiller/config-server-dev:${TAG}"
+    image: "ijohnnymiller/config-server-dev_dkr:${TAG}"
     container_name: config-server
     ports:
       - 8888:8888
 
   eureka-client-greeting-service:
-    image: "ijohnnymiller/eureka-client-greeting-service-dev:${TAG}"
+    image: "ijohnnymiller/eureka-client-greeting-service-dev_dkr:${TAG}"
     container_name: eureka-client-greeting-service
     ports:
       - 8762:8762
 
   eureka-client-feign-service:
-    image: "ijohnnymiller/eureka-client-feign-service-dev:${TAG}"
+    image: "ijohnnymiller/eureka-client-feign-service-dev_dkr:${TAG}"
     container_name: eureka-client-feign-service
     ports:
       - 8763:8763
 
   zuul-service:
-    image: "ijohnnymiller/zuul-service-dev:${TAG}"
+    image: "ijohnnymiller/zuul-service-dev_dkr:${TAG}"
     container_name: zuul-service
     ports:
       - 8764:8764
 
   config-client:
-    image: "ijohnnymiller/config-client-dev:${TAG}"
+    image: "ijohnnymiller/config-client-dev_dkr:${TAG}"
     container_name: config-client
     ports:
       - 8766:8766
