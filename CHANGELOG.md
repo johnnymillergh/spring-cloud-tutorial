@@ -1,3 +1,23 @@
+# [v0.1.7](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.6...v0.1.7) (2019-10-12)
+
+
+### Bug Fixes
+
+* **$POM:** update Spring Boot version ([42adc47](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/42adc47))
+
+
+### Features
+
+* **$Codecov:** support code coverage ([d201b37](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/d201b37))
+* **$MultiProfiles:** support multi profiles ([6b7eea6](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/6b7eea6))
+
+
+### Performance Improvements
+
+* **$Docker:** correct services registry and improve Docker services stability ([f454086](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/f454086))
+
+
+
 # [v0.1.6](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.5...v0.1.6) (2019-10-09)
 
 
