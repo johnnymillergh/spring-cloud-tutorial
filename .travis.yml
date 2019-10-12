@@ -13,7 +13,10 @@ jdk: openjdk8
 # https://docs.travis-ci.com/user/customizing-the-build
 script:
   - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-#  - mvn cobertura:cobertura
+  - mvn cobertura:cobertura
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
 # This is to enable Codecov's coverage. If a build is successful, the code is submitted for code coverage analysis.
 #after_success:
