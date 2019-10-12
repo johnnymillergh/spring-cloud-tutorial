@@ -7,16 +7,6 @@ spring:
 server:
   port: 8761
 
-eureka:
-  instance:
-    prefer-ip-address: true
-    hostname: localhost
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
 logging:
   config: classpath:configuration/logback/logback-@env@.xml
   # Configure logging level of project as DEBUG to enable SQL logging and other logging.

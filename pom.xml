@@ -8,19 +8,18 @@
     <!-- Project Basics -->
     <groupId>com.jm</groupId>
     <artifactId>spring-cloud-tutorial</artifactId>
-    <version>0.1.6</version>
+    <version>0.1.7</version>
     <packaging>pom</packaging>
     <name>Spring Cloud Tutorial</name>
     <description>A project of Spring Cloud Tutorial</description>
     <properties>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.1.9.RELEASE</spring-boot.version>
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.8.RELEASE</version>
+        <version>2.1.9.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modules>
@@ -115,6 +114,21 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- This plugin provides the features of Cobertura within the Maven 2 & 3 environment -->
+            <!-- https://www.mojohaus.org/cobertura-maven-plugin/ -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <formats>
+                        <format>html</format>
+                        <format>xml</format>
+                    </formats>
+                    <check/>
+                </configuration>
+            </plugin>
         </plugins>
 
         <!-- Set the name of packaged .jar file -->
@@ -125,16 +139,26 @@
 
     <!-- Environment Settings -->
     <profiles>
+        <!-- `development-local` is default profile to start services -->
         <profile>
-            <id>development</id>
+            <id>development-local</id>
             <properties>
-                <env>development</env>
-                <envAlias>dev</envAlias>
+                <env>development-local</env>
+                <envAlias>dev_loc</envAlias>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
+
+        <profile>
+            <id>development-docker</id>
+            <properties>
+                <env>development-docker</env>
+                <envAlias>dev_dkr</envAlias>
+            </properties>
+        </profile>
+
         <profile>
             <id>test</id>
             <properties>
@@ -142,6 +166,7 @@
                 <envAlias>test</envAlias>
             </properties>
         </profile>
+
         <profile>
             <id>stage</id>
             <properties>
@@ -149,6 +174,7 @@
                 <envAlias>stage</envAlias>
             </properties>
         </profile>
+
         <profile>
             <id>production</id>
             <properties>
