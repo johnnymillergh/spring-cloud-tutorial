@@ -1,3 +1,14 @@
+# [v0.1.8](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.7...v0.1.8) (2019-11-11)
+
+
+### Performance Improvements
+
+* **$Docker:** use quote marks to wrap port mapping statement ([896bd4b](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/896bd4b8ff4fea579036fb4077383acd5108138c))
+* **$SpringBoot:** upgrade Spring Boot to 2.2.1.RELEASE ([2738cb4](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/2738cb487aceb9fa18dd609030c40748dd076c19))
+* **$SpringBoot:** upgrade Spring Boot version to 2.2.0.RELEASE ([752453c](https://github.com/johnnymillergh/spring-cloud-tutorial/commit/752453c8a945f3f9af9253ed4474d6f1b94ef502))
+
+
+
 # [v0.1.7](https://github.com/johnnymillergh/spring-cloud-tutorial/compare/v0.1.6...v0.1.7) (2019-10-12)
 
 
